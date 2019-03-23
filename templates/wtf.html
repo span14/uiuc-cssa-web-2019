@@ -1,0 +1,49 @@
+{% macro from_errors(form, hiddens=True) %}
+    {%- if form.errors %}
+        {%- for fieldname, errors in form.errors %}
+            {%- if bootstrap_is_hidden_field(form[fieldname]) and hiddens or 
+                not bootstrap_is_hidden_field(form[fieldname]) and hiddens != 'only' %}
+                {%- for error in errors %}
+                    <div class="invalid-feedback">{{ error }}</div>
+                {%- endfor%}
+            {%- endif %}
+        {%- endfor %}
+    {%- endif %}
+{%- endmacro %}
+
+{% macro _hz_form_wrap(horizontal_columns, form_type, add_group=False, required=False) %}
+    {% if form_type == "horizontal "%}
+        {% if add_group %}
+            <div class="form-group row">
+        {% endif %}
+                <div class="col-{{ horizontal_columns[0] }}-{{ horizontal_columns[1] }} 
+                            offset-{{ horizontal_columns[0] }}-{{ horizontal_columns[2] }}">        
+                </div>
+    {% endif %}
+    {{ caller() }}
+
+    {% if form_type == "horizontal" %}
+        {% if add_group%}
+            </div>
+        {% endif %}
+    {% endif %}
+{% endmacro %}
+
+{% macro form_field(field, 
+                    form_type="basic",
+                    horizontal_columns=('md', 10, 2),
+                    button_map={}) %}
+{% endmacro %}
+
+{% if field.flags.required and not required in kwargs %}
+    {% set kwargs = dict(required=True, **kwargs) %}
+{% endif %}
+
+{% if field.widget.input_type == 'checkbox' %}
+    {% call _hz_form_wrap(horizontal_columns, form_type, True, required=required)%}
+    <div class="form-check">
+        <label>
+            {{ field()|safe }}
+        </label>
+    </div>
+{% endif %}

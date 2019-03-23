@@ -1,0 +1,257 @@
+# Chinese translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-03-10 21:27-0500\n"
+"PO-Revision-Date: 2019-03-10 21:35-0500\n"
+"Last-Translator: \n"
+"Language: zh\n"
+"Language-Team: zh <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#: text.py:3
+msgid ""
+"The Chinese Students and Scholars Association (CSSA) is the official organization for overseas Chinese students and scholars at UIUC. With around 300 enthusiastic members (Spring 2016: 352 registered members), CSSA is dedicated to promote intellectual, social, and cultural activities among Chinese "
+"students and scholars as well as the U of I community."
+msgstr "CSSA，全称Chinese Students and Scholars Association, 是在如今世界各地的高校中都不乏其身影的学生组织。UIUC CSSA是位于伊利诺伊州一个以UIUC华人学生学者为主体的，维护华人学生学者权益、为华人学生学者提供多种服务的非盈利性组织。"
+
+#: text.py:4
+msgid ""
+"At the same time, we devote ourselves to facilitate the relationship and communication between Chinese community and the U of I family. Home to the international Chinese students and scholars, we strive to engage our own community with the local culture. While the university provides rich atmosphere "
+"and opportunities conducive to research and learning, CSSA offers the warmth, inspiration, and excitement that you need and desire."
+msgstr ""
+"全世界有数百个CSSA，每一个都仅仅诞生于三五个人的一腔热情，却在经历了时间的磨练后壮大成了浩浩荡荡的大家庭。在与社会各方打交道的过程中，CSSA越来越成熟，存在感也日渐增强。现在每当提到海外留学、工作，首先进入人们脑海的就是CSSA这个永远欢迎着中国同胞的热情团体。CSSA为初到他国的学生学者们铺好了前进的道路，"
+"送上了欢迎和鼓励；为在异国他乡奋斗了几年的人们提供了无条件的支持和无尽头的欢乐；为站在回国或继续留在他国发展路口的中国同胞们准备了丰富的资料和专业帮助。我们相信，无论是哪里的CSSA，无论是哪种形式的CSSA，在未来都会有更进一步的发展，变得更加贴心，更加热情，更加强大。"
+
+#: authentication/forms.py:10 authentication/forms.py:16
+msgid "Username"
+msgstr "用户名"
+
+#: authentication/forms.py:11 authentication/forms.py:17
+msgid "Password"
+msgstr "密码"
+
+#: authentication/forms.py:12
+msgid "Remember Me"
+msgstr "记住我"
+
+#: authentication/forms.py:13
+msgid "Sign In"
+msgstr "登录"
+
+#: authentication/forms.py:18
+msgid "Repeat Password"
+msgstr "再次输入密码"
+
+#: authentication/forms.py:19
+msgid "Email"
+msgstr "电子邮箱"
+
+#: authentication/forms.py:20
+msgid "Sign Up"
+msgstr "注册"
+
+#: authentication/routes.py:29
+msgid "Sign_In_Up"
+msgstr "登录|注册"
+
+#: cssaweb/lib/python3.6/site-packages/flask_wtf/file.py:51 cssaweb/lib/python3.6/site-packages/wtforms/validators.py:205 cssaweb/lib/python3.6/site-packages/wtforms/validators.py:245
+msgid "This field is required."
+msgstr "这是必填栏。"
+
+#: cssaweb/lib/python3.6/site-packages/flask_wtf/file.py:85
+msgid "File does not have an approved extension: {extensions}"
+msgstr "文件没有一个已批准的扩展名： {extensions}"
+
+#: cssaweb/lib/python3.6/site-packages/flask_wtf/file.py:90
+msgid "File does not have an approved extension."
+msgstr "文件没有一个已批准的扩展名。"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:58
+#, python-format
+msgid "Invalid field name '%s'."
+msgstr "无效输入’%s’"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:66
+#, python-format
+msgid "Field must be equal to %(other_name)s."
+msgstr "字段必须等于%(other_name)s."
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:99
+#, python-format
+msgid "Field must be at least %(min)d character long."
+msgid_plural "Field must be at least %(min)d characters long."
+msgstr[0] "字段必须至少含有%(min)d字母"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:102
+#, python-format
+msgid "Field cannot be longer than %(max)d character."
+msgid_plural "Field cannot be longer than %(max)d characters."
+msgstr[0] "字段最多含有%(max)d字母"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:105
+#, python-format
+msgid "Field must be between %(min)d and %(max)d characters long."
+msgstr "字段长度必须在%(min)d和%(max)d字母之间"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:141
+#, python-format
+msgid "Number must be at least %(min)s."
+msgstr "数字必须大于等于%(min)s。"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:143
+#, python-format
+msgid "Number must be at most %(max)s."
+msgstr "数字必须小于等于%(max)s。"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:145
+#, python-format
+msgid "Number must be between %(min)s and %(max)s."
+msgstr "数字必须在%(min)s和%(max)s之间。"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:277
+msgid "Invalid input."
+msgstr "无效输入。"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:311
+msgid "Invalid email address."
+msgstr "无效电子邮箱。"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:352
+msgid "Invalid IP address."
+msgstr "无效IP地址。"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:403
+msgid "Invalid Mac address."
+msgstr "无效Mac地址。"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:432
+msgid "Invalid URL."
+msgstr "无效URL。"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:452
+msgid "Invalid UUID."
+msgstr "无效UUID。"
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:482
+#, python-format
+msgid "Invalid value, must be one of: %(values)s."
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/validators.py:514
+#, python-format
+msgid "Invalid value, can't be any of: %(values)s."
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/csrf/core.py:98 cssaweb/lib/python3.6/site-packages/wtforms/ext/csrf/form.py:47
+msgid "Invalid CSRF Token"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/csrf/session.py:61 cssaweb/lib/python3.6/site-packages/wtforms/ext/csrf/session.py:58
+msgid "CSRF token missing"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/csrf/session.py:69 cssaweb/lib/python3.6/site-packages/wtforms/ext/csrf/session.py:66
+msgid "CSRF failed"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/csrf/session.py:74 cssaweb/lib/python3.6/site-packages/wtforms/ext/csrf/session.py:71
+msgid "CSRF token expired"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/ext/appengine/fields.py:87 cssaweb/lib/python3.6/site-packages/wtforms/ext/appengine/fields.py:164 cssaweb/lib/python3.6/site-packages/wtforms/ext/appengine/fields.py:166 cssaweb/lib/python3.6/site-packages/wtforms/ext/django/fields.py:95
+#: cssaweb/lib/python3.6/site-packages/wtforms/ext/sqlalchemy/fields.py:125 cssaweb/lib/python3.6/site-packages/wtforms/ext/sqlalchemy/fields.py:127 cssaweb/lib/python3.6/site-packages/wtforms/ext/sqlalchemy/fields.py:180 cssaweb/lib/python3.6/site-packages/wtforms/ext/sqlalchemy/fields.py:185
+#: cssaweb/lib/python3.6/site-packages/wtforms/fields/core.py:475
+msgid "Not a valid choice"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/ext/appengine/fields.py:185
+msgid "Not a valid list"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/ext/appengine/fields.py:204
+msgid "Not a valid integer list"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/ext/dateutil/fields.py:63
+msgid "Please input a date/time value"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/ext/dateutil/fields.py:75 cssaweb/lib/python3.6/site-packages/wtforms/ext/dateutil/fields.py:83
+msgid "Invalid date/time input"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/fields/core.py:468
+msgid "Invalid Choice: could not coerce"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/fields/core.py:501
+msgid "Invalid choice(s): one or more data inputs could not be coerced"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/fields/core.py:508
+#, python-format
+msgid "'%(value)s' is not a valid choice for this field"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/fields/core.py:591
+msgid "Not a valid integer value"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/fields/core.py:657
+msgid "Not a valid decimal value"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/fields/core.py:684
+msgid "Not a valid float value"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/fields/core.py:745
+msgid "Not a valid datetime value"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/fields/core.py:762
+msgid "Not a valid date value"
+msgstr ""
+
+#: cssaweb/lib/python3.6/site-packages/wtforms/fields/core.py:779
+msgid "Not a valid time value"
+msgstr ""
+
+#: main/routes.py:17 templates/base.html:30
+msgid "Home"
+msgstr "主页"
+
+#: templates/base.html:33
+msgid "About"
+msgstr "关于我们"
+
+#: templates/base.html:36
+msgid "Division"
+msgstr "部门"
+
+#: templates/base.html:39
+msgid "Events"
+msgstr "活动"
+
+#: templates/base.html:42
+msgid "Sponsors and Partners"
+msgstr "合作伙伴"
+
+#: templates/base.html:51
+msgid "Login"
+msgstr "登入"
+
+#: templates/base.html:110
+msgid "Error: Could not contact server"
+msgstr "错误：无法连接服务器"

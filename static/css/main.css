@@ -1,0 +1,55 @@
+body {
+    margin-top: 61px;
+    background-image: url('../images/background.jpg');
+}
+
+.bg-color {
+    background-color: #000!important;
+    opacity: 0.8;
+}
+
+nav ul{
+    margin: 0 2px;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav div form button.btn {
+    color: #fff;
+    font-size: 21px;
+    opacity: 0.5;
+}
+
+nav ul li {
+    color: #fff;
+    font-size: 21px;
+    line-height: 0;
+}
+
+#homeIntro > div:nth-child(1) {
+    margin-top: 2%;
+}
+
+#footer > * {
+    width: 100%;
+} 
+
+#qr {
+    max-height: 90px;
+}
+
+/* laptop */
+@media ( min-width: 992px ) {
+    .col-grid-divider {
+        position: relative;
+    }
+    .col-grid-divider:after {
+        content: "";
+        background: silver;
+        position: absolute;
+        top: 10%;
+        bottom: 10%;
+        right: 0;
+        height: 80%;
+        width: 1px; }
+}

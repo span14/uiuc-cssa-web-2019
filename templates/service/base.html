@@ -1,0 +1,54 @@
+{% extends "service/semantic_base.html" %}
+
+{% block title %}
+    {% if title %}Service|{{ title }}{% else %}Service{% endif %}
+{% endblock %}
+
+{% block metas %}
+    {{ super() }}
+    <meta charset='utf-8'>
+    <meta name="author" content="Siheng Pan">
+{% endblock %}
+
+{% block styles %}
+{{ super() }}
+<link href="{{ url_for('static', filename='css/service_index.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="ui top attached menu">
+        <a class="item">
+            <i class="sidebar icon"></i>
+            Menu
+        </a>
+    </div>
+    <div class="ui bottom attached segment pushable">
+        <div id="menu" class="ui inverted left vertical sidebar menu">
+            <div class="item">
+                <a href="javascript:void(0)" class="ui mini circular logo icon image">
+                    <img src="{{ link }}">
+                </a>
+                <b>
+                    Hello, Anonymous!
+                </b>
+            </div>
+            <a class="item active" href="{{ url_for('service.index') }}">
+                Home
+            </a>
+        </div>
+        <div class="pusher blurring">
+            <div class="ui basic segment">
+                {% block app_content %}{% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+        $('.ui.sidebar').sidebar({
+            context: $('.bottom.segment')
+        }).sidebar('attach events', '.menu .item')
+    </script>
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block modals %}
+    {% if loginForm and signUpForm %}
+        <div class="modal fade" tabindex="-1" role='dialog' id="forms" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <ul class="nav nav-tabs nav-fill w-100" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="nav-login-tab" data-toggle="tab" role="tab" href="#login" aria-controls="login" aria-selected="true">Sign In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-register-tab" data-toggle="tab" role="tab" href="#register" aria-controls="register" aria-selected="false">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="nav-login-tab">
+                                <form action="{{ url_for('auth.sign_in_up') }}" method='POST'>
+                                    {{ loginForm.hidden_tag() }}
+                                    <div class="form-group">
+                                        {{ loginForm.username_l(placeholder='Username*', class='form-control') }}
+                                        {% if loginForm.username_l.errors %}
+                                            {% for error in loginForm.username_l.errors %}
+                                                <div>{{ error }}</div>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ loginForm.password_l(placeholder='Password*', class='form-control')}}
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check pl-0">
+                                            {{ loginForm.remember_me.label(class='form-check-label') }}
+                                            {{ loginForm.remember_me(class='form-check-input ml-2')}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        {{ loginForm.submit_l(class='btn btn-dark') }}
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="nav-register-tab">
+                                <form>
+                                    {{ signUpForm.hidden_tag() }}
+                                    <div class="form-group">
+                                        {{ signUpForm.username_s(class='form-control', placeholder='Username*') }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ signUpForm.password_s(class='form-control', placeholder='Password*') }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ signUpForm.password2(class='form-control', placeholder='Repeat Password*') }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ signUpForm.email(class='form-control', placeholder='Email*') }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ signUpForm.submit_s(class='btn btn-dark') }}
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+
+    {% if loginForm and signUpForm %}
+        <script>
+            $('#forms').modal('show');
+            $('#forms').on('hidden.bs.modal', function(e) {
+                window.location.replace('{{ url_for("main.index") }}');
+            })
+        </script>
+
+    {% endif %}
+{% endblock %}
